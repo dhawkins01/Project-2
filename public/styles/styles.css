@@ -1,3 +1,11 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+body {
+  background-color: #74B3CE
+}
+
+.card-body {
+  background-color: #508991
+}
