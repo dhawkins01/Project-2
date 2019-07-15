@@ -1,33 +1,117 @@
 <div id="home">
   <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+    <div class="row mt-3">
+      {{!-- animal search column --}}
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">
+            Animal Search
           </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+          <div class="card-body search-field">
+            <form>
+              
+              <div class="form-group">
+                <label for="speciesSearch">Species</label>
+                <select class="form-control" id="animalSpeciesSearch">
+                  <option>Cat</option>
+                  <option>Dog</option>
+                  
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="stateSearch">State</label>
+                <select class="form-control" id="animalStateSearch">
+                  <option>Alabama</option> <option>Alaska</option> <option>Arizona</option> <option>Arkansas</option> <option>California</option>
+                  <option>Colorado</option> <option>Connecticut</option> <option>Delaware</option> <option>Florida</option> <option>Georgia</option>
+                  <option>Hawaii</option> <option>Idaho</option> <option>Illinois</option> <option>Indiana</option> <option>Iowa</option>
+                  <option>Kansas</option> <option>Kentucky</option> <option>Lousiana</option> <option>Maine</option> <option>Maryland</option> 
+                  <option>Massachusetts </option> <option>Michigan</option> <option>Minnesota</option> <option>Mississippi</option> <option>Misouri</option> 
+                  <option>Montana</option> <option>Nebraska</option> <option>Nevada</option> <option>New Hampshire</option> <option>New Jersey</option> 
+                  <option>New Mexico</option> <option>New York</option> <option>North Carolina</option> <option>North Dakota</option> <option>Ohio</option> 
+                  <option>Oklahoma</option> <option>Oregon</option> <option>Pennsylvania</option> <option>Rhode Island</option> <option>South Carolina</option> 
+                  <option>South Dakota</option> <option>Tennessee</option> <option>Texas</option> <option>Utah</option> <option>Vermont</option> 
+                  <option>Virginia</option> <option>Washington</option> <option>West Virginia</option> <option>Wisconsin</option> <option>Wyoming</option> 
+                  
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="genderSearch">Gender</label>
+                <select class="form-control" id="animalGenderSearch">
+                  <option>Female</option>
+                  <option>Male</option>
+                  
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="ageSearch">Age</label>
+                <select class="form-control" id="animalGenderSearch">
+                  <option>Under 1 year</option>
+                  <option>Under 5 years</option>
+                  <option>Under 10 years</option>
+                  
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary"><i class="fas fa-bone"></i> Fetch</button>
+              
+            </form>
           </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
+        </div>
+      </div>
+      {{!-- Shelter Search column --}}
+
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header search-field">
+            Shelter Search
+          </div>
+          <div class="card-body">
+            <form>
+              
+              <div class="form-group">
+                <label for="shelterStateSearch">State</label>
+                <select class="form-control" id="shelterStateSearch">
+                  <option>Alabama</option> <option>Alaska</option> <option>Arizona</option> <option>Arkansas</option> <option>California</option>
+                  <option>Colorado</option> <option>Connecticut</option> <option>Delaware</option> <option>Florida</option> <option>Georgia</option>
+                  <option>Hawaii</option> <option>Idaho</option> <option>Illinois</option> <option>Indiana</option> <option>Iowa</option>
+                  <option>Kansas</option> <option>Kentucky</option> <option>Lousiana</option> <option>Maine</option> <option>Maryland</option> 
+                  <option>Massachusetts </option> <option>Michigan</option> <option>Minnesota</option> <option>Mississippi</option> <option>Misouri</option> 
+                  <option>Montana</option> <option>Nebraska</option> <option>Nevada</option> <option>New Hampshire</option> <option>New Jersey</option> 
+                  <option>New Mexico</option> <option>New York</option> <option>North Carolina</option> <option>North Dakota</option> <option>Ohio</option> 
+                  <option>Oklahoma</option> <option>Oregon</option> <option>Pennsylvania</option> <option>Rhode Island</option> <option>South Carolina</option> 
+                  <option>South Dakota</option> <option>Tennessee</option> <option>Texas</option> <option>Utah</option> <option>Vermont</option> 
+                  <option>Virginia</option> <option>Washington</option> <option>West Virginia</option> <option>Wisconsin</option> <option>Wyoming</option> 
+                  
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="shelterTypeSearch">Shelter Type</label>
+                <select class="form-control" id="shelterTypeSearch">
+                  <option>Kill</option>
+                  <option>No Kill</option>
+                  
+                  
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="shelterRating">Shelter Type</label>
+                <select class="form-control" id="shelterRatingSearch">
+                  <option>*</option>
+                  <option>**</option>
+                  <option>***</option>
+                  <option>****</option>
+                  <option>*****</option>
+                  
+                  
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary"><i class="fas fa-bone"></i> Fetch</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 </div>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
