@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Get all shelters
   app.get("/api/shelters", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
+    db.Shelters.findAll({}).then(function(dbExamples) {
       res.json(dbExamples);
     });
   });
