@@ -94,6 +94,19 @@ var handleDeleteBtnClick = function() {
   });
 };
 
+function shelterSearchClick() {
+  event.preventDefault();
+  console.log("Clicked");
+  var shelterState = $(shelterStateSearch).val();
+  var shelterType = $(shelterTypeSearch).val();
+  var shelterRating = $(shelterRatingSearch).val();
+  console.log(shelterState);
+  console.log(shelterType);
+  console.log(shelterRating);
+}
+
+$submitBtn.on("click", shelterSearchClick);
+
 // Add event listeners to the submit and delete buttons
-$submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".delete", handleDeleteBtnClick);
+// $submitBtn.on("click", handleFormSubmit);
+// $exampleList.on("click", ".delete", handleDeleteBtnClick);

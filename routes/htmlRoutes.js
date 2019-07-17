@@ -13,8 +13,7 @@ module.exports = function(app) {
 
   // Shelter Search Page
   app.get("/search/shelters", function(req, res) {
-    db.
-    res.render("shelter_search",);
+    res.render("shelter_search");
   });
 
   // Render 404 page for any unmatched routes
