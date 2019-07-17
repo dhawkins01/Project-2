@@ -1,7 +1,55 @@
-<input src="../public/image/findShelter.png" class="{{klasse}}" type="image"/>
-
+<img src="/image/dogshelter.png" height="100%" width="100%" />
+<div class="container">
+<section id = "shelter-form" class="search-sec">
+    <div class="container">
+        <form action="#" method="post" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" id="shelterStateSearch">
+                                <option>Select State</option>
+                  <option>Alabama</option> <option>Alaska</option> <option>Arizona</option> <option>Arkansas</option> <option>California</option>
+                  <option>Colorado</option> <option>Connecticut</option> <option>Delaware</option> <option>Florida</option> <option>Georgia</option>
+                  <option>Hawaii</option> <option>Idaho</option> <option>Illinois</option> <option>Indiana</option> <option>Iowa</option>
+                  <option>Kansas</option> <option>Kentucky</option> <option>Lousiana</option> <option>Maine</option> <option>Maryland</option> 
+                  <option>Massachusetts </option> <option>Michigan</option> <option>Minnesota</option> <option>Mississippi</option> <option>Misouri</option> 
+                  <option>Montana</option> <option>Nebraska</option> <option>Nevada</option> <option>New Hampshire</option> <option>New Jersey</option> 
+                  <option>New Mexico</option> <option>New York</option> <option>North Carolina</option> <option>North Dakota</option> <option>Ohio</option> 
+                  <option>Oklahoma</option> <option>Oregon</option> <option>Pennsylvania</option> <option>Rhode Island</option> <option>South Carolina</option> 
+                  <option>South Dakota</option> <option>Tennessee</option> <option>Texas</option> <option>Utah</option> <option>Vermont</option> 
+                  <option>Virginia</option> <option>Washington</option> <option>West Virginia</option> <option>Wisconsin</option> <option>Wyoming</option>
+                            </select>
+                        </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <select class="form-control search-slt" id="shelterTypeSearch">
+                                    <option>Select Shelter Type</option>
+                                    <option>Kill Shelter</option>
+                                    <option>No-Kill Shelter</option>
+                                </select>
+                            </div>                                
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <select class="form-control search-slt" id="shelterRatingSearch">
+                                    <option>Select Shelter Rating</option>
+                                    <option>&#9733 &#9734 &#9734 &#9734 &#9734</option>
+                                    <option>&#9733 &#9733 &#9734 &#9734 &#9734</option>
+                                    <option>&#9733 &#9733 &#9733 &#9734 &#9734</option>
+                                    <option>&#9733 &#9733 &#9733 &#9733 &#9734</option>
+                                    <option>&#9733 &#9733 &#9733 &#9733 &#9733</option>
+                                </select>
+                            </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button id = "shelterButton" type="button" class="btn btn-danger wrn-btn"><i class="fas fa-bone"></i>Fetch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+</div>
 <ul>
     {{#each shelters}}
-{{!-- form/card goes here--}}
+    {{!-- form/card goes here--}}
     {{/each}}
 </ul>
