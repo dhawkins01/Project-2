@@ -15,6 +15,10 @@ module.exports = function(app) {
   app.get("/search/shelters", function(req, res) {
     res.render("shelter_search");
   });
+  app.get("/profilepage", function(req, res) {
+    res.render("profile");
+  });
+
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
