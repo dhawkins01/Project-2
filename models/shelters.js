@@ -1,6 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Shelters = sequelize.define("Shelters", {
     // Giving the Author model a name of type STRING
+    
     shelter_id: DataTypes.INTEGER,
     shelter_name: DataTypes.STRING,
     shelter_city: DataTypes.STRING,
