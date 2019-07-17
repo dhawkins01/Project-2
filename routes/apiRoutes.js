@@ -9,7 +9,7 @@ module.exports = function(app) {
   });
 
   app.get("/api/shelters/:id", function(req, res) {
-    // Find one Author with the id in req.params.id and return them to the user with res.json
+    // Find one shelter with the id in req.params.id and return them to the user with res.json
     db.Shelters.findOne({
       where: {
         shelter_id: req.params.id
@@ -20,6 +20,4 @@ module.exports = function(app) {
       console.log(dbShelter);
     });
   });
-
-    
 };

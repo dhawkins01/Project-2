@@ -11,6 +11,8 @@ shelter_city VARCHAR(45) NULL,
 shelter_state VARCHAR(45) NULL,
 shelter_rating INTEGER NOT NULL,
 shelter_kill BOOLEAN DEFAULT FALSE,
+createdAt VARCHAR(45) NULL,
+updatedAt VARCHAR(45) NULL,
 PRIMARY KEY (shelter_id)
 );
 
