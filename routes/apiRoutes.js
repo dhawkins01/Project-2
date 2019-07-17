@@ -8,17 +8,18 @@ module.exports = function(app) {
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  app.get("/api/shelters/:id", function(req, res) {
+    // Find one Author with the id in req.params.id and return them to the user with res.json
+    db.Shelters.findOne({
+      where: {
+        shelter_id: req.params.id
+      }
+    }).then(function(dbShelter) {
+      console.log(req.params.id);
+      res.json(dbShelter);
+      console.log(dbShelter);
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
+    
 };
