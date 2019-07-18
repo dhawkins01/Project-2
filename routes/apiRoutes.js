@@ -7,6 +7,7 @@ module.exports = function(app) {
       res.json(dbExamples);
     });
   });
+  
 
   app.get("/api/shelters/:id", function(req, res) {
     // Find one shelter with the id in req.params.id and return them to the user with res.json
@@ -20,4 +21,39 @@ module.exports = function(app) {
       console.log(dbShelter);
     });
   });
-};
+  app.post("/api/shelterSearch", function(req, res) {
+    console.log(req.body);
+    db.Shelters.findAll({
+      where: {
+        shelter_state: req.body.state,
+        shelter_kill: req.body.type,
+        shelter_rating: req.body.rating
+        }
+    }).then(function(data) {
+      // We have access to the new todo as an argument inside of the callback function
+      console.log(data);
+      res.json(data);
+    });
+  });
+
+  app.post("/api/animalSearch", function(req, res) {
+    db.Pets.findAll({
+      where: {
+        pet_species: req.body.species,
+        // pet_state: req.body.state,
+        pet_gender: req.body.gender,
+        pet_age: req.body.age
+      },
+      include: [{
+        model: db.Shelters,
+        where: { 
+        // shelter_id: shelter_id,
+        shelter_state: req.body.state
+        }
+       }]
+     }).then(function(data) {
+        console.log(data);
+          res.json(data);
+ });
+});
+}

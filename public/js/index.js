@@ -1,7 +1,8 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
+var $submitBtn = $("#shelterSubmit");
+var $submitBtn2 = $("#animalSubmit");
 var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
@@ -94,6 +95,53 @@ var handleDeleteBtnClick = function() {
   });
 };
 
+function shelterSearchClick() {
+  event.preventDefault();
+  console.log("Clicked");
+  var shelterState = $(shelterStateSearch).val();
+  var shelterType = $(shelterTypeSearch).val();
+  var shelterRating = $(shelterRatingSearch).val();
+  console.log(shelterState);
+  console.log(shelterType);
+  console.log(shelterRating);
+
+  var query = {
+    state: shelterState,
+    type: shelterType,
+    rating: shelterRating
+}
+  console.log(query);
+  $.post("/api/shelterSearch", query)
+
+}
+
+
+function animalSearchClick() {
+  event.preventDefault();
+  console.log("Clicked");
+  var animalSpecies = $(animalSpeciesSearch).val();
+  var animalState = $(animalStateSearch).val();
+  var animalGender = $(animalGenderSearch).val();
+  var animalAge = $(animalAgeSearch).val();
+  console.log(animalSpecies);
+  console.log(animalState);
+  console.log(animalGender);
+  console.log(animalAge);
+
+  var query = {
+    species: animalSpecies,
+    state: animalState,
+    gender: animalGender,
+    age: animalAge
+  }
+
+  $.post("/api/animalSearch", query)
+}
+
+
+$submitBtn.on("click", shelterSearchClick);
+$submitBtn2.on("click", animalSearchClick);
+
 // Add event listeners to the submit and delete buttons
-$submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".delete", handleDeleteBtnClick);
+// $submitBtn.on("click", handleFormSubmit);
+// $exampleList.on("click", ".delete", handleDeleteBtnClick);
