@@ -32,7 +32,10 @@ module.exports = function(app) {
     }).then(function(data) {
       // We have access to the new todo as an argument inside of the callback function
       console.log(data);
-      res.json(data);
+      var obj = {
+        data: data
+      };
+      res.render("example", obj);  
     });
   });
 
@@ -54,6 +57,7 @@ module.exports = function(app) {
      }).then(function(data) {
         console.log(data);
           res.json(data);
+          
  });
 });
 }

@@ -111,7 +111,11 @@ function shelterSearchClick() {
     rating: shelterRating
 }
   console.log(query);
-  $.post("/api/shelterSearch", query)
+  // $.post("/api/shelterSearch", query)
+
+  $.post("/api/shelterSearch", query);
+    
+  window.location = "/example";
 
 }
 
@@ -136,6 +140,7 @@ function animalSearchClick() {
   }
 
   $.post("/api/animalSearch", query)
+  
 }
 
 
