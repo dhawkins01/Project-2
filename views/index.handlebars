@@ -18,16 +18,10 @@
             <a class="nav-link js-scroll" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#Serivces">Services</a>
+            <a class="nav-link js-scroll" href="#serfices">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#Featured">Featured</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#Shop">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#Contact Us">Contact Us</a>
+            <a class="nav-link js-scroll" href="#portfolio">Featured</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#Login">Login/Register</a>
@@ -43,21 +37,55 @@
   <div class="intro-content display-table">
     <div class="table-cell">
       <div class="container">
-        <strong><h1 class="intro-title mb-4">Welcome to FurEver!</h1>
-        <p class="intro-subtitle"><span class="text-slider-items">A local shelter search engine., Where we simplify pet
-            searching just for you!, So what are you waiting for?, Your furry friend awaits for your call!, ,...
-          </span><strong class="text-slider"></strong></p>
+        <strong>
+          <h1 class="intro-title mb-4">Welcome to FurEver!</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">A local shelter search engine., Where we simplify
+              pet
+              searching just for you!, So what are you waiting for?, Your furry friend awaits for your call!, ,...
+            </span><strong class="text-slider"></strong></p>
       </div>
     </div>
   </div>
 </div>
 
+
+
+{{!-- Modal here for login --}}
+
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
 {{!-- Counter,DEEZ NUMBERS, WHAT DO DEY MEEN???? jk :> --}}
 
 <section id="facts" class="wow fadeIn">
   <div class="container">
 
-    <header class="section-header text-center" >
+    <header class="section-header text-center">
       <h3>Facts About Shelters in The U.S.</h3>
       <p>Here is some data these shelters go through yearly.</p>
     </header>
@@ -100,49 +128,52 @@
 
     <header class="section-header text-center">
       <h3>Why we care</h3>
-      <p>We are a group of pet owners whom beleive every pet out there needs a chance. Wether its a grey stray to a rescue from a dog fighting ring. Every pet needs the opportunity to be loved and cared for. So we've made it simple and easy for you to locate a pet nearby. So what are you waiting for, cause ur "furiend" is.  </p>
+      <p>We are a group of pet owners whom beleive every pet out there needs a chance. Wether its a grey stray to a
+        rescue from a dog fighting ring. Every pet needs the opportunity to be loved and cared for. So we've made it
+        simple and easy for you to locate a pet nearby. So what are you waiting for, cause ur "furiend" is. </p>
     </header>
-    <header class="section-header">
-      <br><br>
-      <h3>Services We provide</h3>
-    </header>
-  
-    <div class="row about-cols">
 
-      <div class="col-md-6 wow fadeInUp">
-        <div class="about-col">
-          <div class="img">
-            <img src="/image/about-mission.jpg" alt="" class="img-fluid">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+
+    <section id="serfices">
+      <header class="section-header">
+        <br><br>
+        <h3>Services We provide</h3>
+      </header>
+
+      <div class="row about-cols">
+        <div class="col-md-6 wow fadeInUp">
+          <div class="about-col">
+            <div class="img">
+              <img src="/image/about-mission.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            </div>
+            <h2 class="title"><a href="#">Search By Shelter</a></h2>
+            <p class="description"></p>
           </div>
-          <h2 class="title"><a href="#">Search By Shelter</a></h2>
-          <p class="description"></p>
+        </div>
+
+        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="about-col">
+            <div class="img">
+              <img src="/image/about-plan.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-list-outline"></i></div>
+            </div>
+            <h2 class="title"><a href="#">Search By Animal</a></h2>
+            <p class="description"></p>
+          </div>
         </div>
       </div>
-
-      <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="about-col">
-          <div class="img">
-            <img src="/image/about-plan.jpg" alt="" class="img-fluid">
-            <div class="icon"><i class="ion-ios-list-outline"></i></div>
-          </div>
-          <h2 class="title"><a href="#">Search By Animal</a></h2>
-          <p class="description"></p>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
 </section>
-<!-- #about -->
 
 
-{{!-- PORTFOLIO SECTION  --}}
-
+{{!-- featured SECTION  --}}
 <section id="portfolio" class="section-bg">
   <div class="container">
 
     <header class="section-header">
-      <h3 class="section-title">Featured Pets</h3>
+      <h3 class="section-title">Featured Animals</h3>
     </header>
 
     <div class="row portfolio-container">
@@ -196,9 +227,7 @@
       </div>
     </div>
   </div>
-</section><!-- #portfolio -->
-
-
+</section>
 {{!-- Freatured Shelter --}}
 
 <section id="portfolio" class="section-bg">
@@ -259,5 +288,4 @@
       </div>
     </div>
   </div>
-</section><!-- #portfolio -->
-
+</section>
