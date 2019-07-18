@@ -7,6 +7,7 @@ module.exports = function(app) {
       res.json(dbExamples);
     });
   });
+  
 
   app.get("/api/shelters/:id", function(req, res) {
     // Find one shelter with the id in req.params.id and return them to the user with res.json
@@ -39,11 +40,20 @@ module.exports = function(app) {
     db.Pets.findAll({
       where: {
         pet_species: req.body.species,
-        pet_gender: req.body.gender
-      }.then(function(data) {
-        res.json(data);
-      })
-
-    })
-  })
-};
+        // pet_state: req.body.state,
+        pet_gender: req.body.gender,
+        pet_age: req.body.age
+      },
+      include: [{
+        model: db.Shelters,
+        where: { 
+        // shelter_id: shelter_id,
+        shelter_state: req.body.state
+        }
+       }]
+     }).then(function(data) {
+        console.log(data);
+          res.json(data);
+ });
+});
+}

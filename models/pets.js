@@ -10,6 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     pet_age: DataTypes.INTEGER,
     pet_gender: DataTypes.BOOLEAN,
     pet_breed: DataTypes.STRING,
+    shelter_id: DataTypes.INTEGER,
     pet_adopted: DataTypes.BOOLEAN,
     createdAt: DataTypes.STRING,
     updatedAt: DataTypes.STRING
@@ -17,9 +18,7 @@ module.exports = function(sequelize, DataTypes) {
 
   Pets.associate = function(models) {
     Pets.belongsTo(models.Shelters, {
-      foreignKey: {
-        allowNull: false
-      }
+      foreignKey: 'shelter_id'
     });
   };
 
