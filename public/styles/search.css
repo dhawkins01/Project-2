@@ -1,14 +1,14 @@
 #shelter-form{
     position: absolute;
-  top: 450px;
-  right: 10px;
-  width: 1200px;
+  top: 50%;
+  left: 5%;
+  width: 100%;
   height: 200px;
 }
 #animal-form{
   position: absolute;
-  top: 450px;
-  right: 0px;
-  width: 1200px;
+  top: 50%;
+  left: 5%;
+  width: 100%;
   height: 200px;
 }
