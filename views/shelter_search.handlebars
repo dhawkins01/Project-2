@@ -80,7 +80,7 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                 <button id="shelterButton" type="button" class="btn btn-danger wrn-btn"><i
-                                        class="fas fa-bone"></i>Fetch</button>
+                                        class="fas fa-bone"></i> Fetch</button>
                             </div>
                         </div>
                     </div>
@@ -91,6 +91,6 @@
 </div>
 <ul>
     {{#each shelters}}
-    {{!-- form/card goes here--}}
+    <li>{{this.shelter_name}}</li>
     {{/each}}
 </ul>
