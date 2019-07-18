@@ -1,117 +1,486 @@
-<div id="home">
+{{!-- Home Navbar,with animations --}}
+<div class="navbarIndex">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">FurEver</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Featured</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div id="home" class="intro route bg-image" style="background-image: url(/image/adorable-animal-breed-434090.jpg)">
+  <div class="overlay-itro"></div>
+  <div class="intro-content display-table">
+    <div class="table-cell">
+      <div class="container">
+        <h1 class="intro-title mb-4">Welcome to FurEver!</h1>
+        <p class="intro-subtitle"><span class="text-slider-items">A local shelter search engine., Where we simplify pet
+            searching just for you!, So what are you waiting for?, Your furry friend awaits for your call!, ,...
+          </span><strong class="text-slider"></strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Counter,DEEZ NUMBERS, WHAT DO DEY MEEN???? jk :> --}}
+
+<section id="facts" class="wow fadeIn">
   <div class="container">
-    <div class="row mt-3">
-      {{!-- animal search column --}}
-      <div class="col-6">
-        <div class="card">
-          <div class="card-header">
-            Animal Search
+
+    <header class="section-header">
+      <h3>Le Facts</h3>
+      <p> ANIMATAIONS ERRYWHERE. ONE FOR YOU. ONE FOR YOU , REEEEEEEEEEE</p>
+    </header>
+
+    <div class="row counters">
+
+      <div class="col-lg-3 col-6 text-center">
+        <span data-toggle="counter-up">274</span>
+        <p>Dogs inpounded daily</p>
+      </div>
+
+      <div class="col-lg-3 col-6 text-center">
+        <span data-toggle="counter-up">421</span>
+        <p>Horses in the world</p>
+      </div>
+
+      <div class="col-lg-3 col-6 text-center">
+        <span data-toggle="counter-up">1,364</span>
+        <p>Shelters with no Tacos</p>
+      </div>
+
+      <div class="col-lg-3 col-6 text-center">
+        <span data-toggle="counter-up">-50</span>
+        <p>Hard Workers</p>
+      </div>
+
+    </div>
+
+    <div class="facts-img">
+      <img src="img/facts-img.png" alt="" class="img-fluid">
+    </div>
+
+  </div>
+</section><!-- #facts -->
+
+{{!-- About Section, --}}
+
+<section id="about">
+  <div class="container">
+
+    <header class="section-header">
+      <h3>Why we care</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </header>
+    <header class="section-header">
+      <br><br>
+      <h3>Services We provide</h3>
+    </header>
+    <div class="row about-cols">
+
+      <div class="col-md-4 wow fadeInUp">
+        <div class="about-col">
+          <div class="img">
+            <img src="/image/about-mission.jpg" alt="" class="img-fluid">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
           </div>
-          <div class="card-body search-field">
-            <form>
-              
-              <div class="form-group">
-                <label for="speciesSearch">Species</label>
-                <select class="form-control" id="animalSpeciesSearch">
-                  <option value=0>Cat</option>
-                  <option value=1>Dog</option>
-                  
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="stateSearch">State</label>
-                <select class="form-control" id="animalStateSearch">
-                  <option>Alabama</option> <option>Alaska</option> <option>Arizona</option> <option>Arkansas</option> <option>California</option>
-                  <option>Colorado</option> <option>Connecticut</option> <option>Delaware</option> <option>Florida</option> <option>Georgia</option>
-                  <option>Hawaii</option> <option>Idaho</option> <option>Illinois</option> <option>Indiana</option> <option>Iowa</option>
-                  <option>Kansas</option> <option>Kentucky</option> <option>Lousiana</option> <option>Maine</option> <option>Maryland</option> 
-                  <option>Massachusetts </option> <option>Michigan</option> <option>Minnesota</option> <option>Mississippi</option> <option>Misouri</option> 
-                  <option>Montana</option> <option>Nebraska</option> <option>Nevada</option> <option>New Hampshire</option> <option>New Jersey</option> 
-                  <option>New Mexico</option> <option>New York</option> <option>North Carolina</option> <option>North Dakota</option> <option>Ohio</option> 
-                  <option>Oklahoma</option> <option>Oregon</option> <option>Pennsylvania</option> <option>Rhode Island</option> <option>South Carolina</option> 
-                  <option>South Dakota</option> <option>Tennessee</option> <option>Texas</option> <option>Utah</option> <option>Vermont</option> 
-                  <option>Virginia</option> <option>Washington</option> <option>West Virginia</option> <option>Wisconsin</option> <option>Wyoming</option> 
-                  
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="genderSearch">Gender</label>
-                <select class="form-control" id="animalGenderSearch">
-                  <option value=0>Female</option>
-                  <option value=1>Male</option>
-                  
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="ageSearch">Age</label>
-                <select class="form-control" id="animalAgeSearch">
-                  <option value=1>Under 1 year</option>
-                  <option value=5>Under 5 years</option>
-                  <option value=10>Under 10 years</option>
-                  
-                </select>
-              </div>
-              <button type="submit" class="submit btn btn-primary" id="animalSubmit"><i class="fas fa-bone"></i> Fetch</button>
-              
-            </form>
-          </div>
+          <h2 class="title"><a href="#">Our Mission</a></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
         </div>
       </div>
-      {{!-- Shelter Search column --}}
 
-      <div class="col-6">
-        <div class="card">
-          <div class="card-header search-field">
-            Shelter Search
+      <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="about-col">
+          <div class="img">
+            <img src="/image/about-plan.jpg" alt="" class="img-fluid">
+            <div class="icon"><i class="ion-ios-list-outline"></i></div>
+
+
           </div>
-          <div class="card-body">
-            <form>
-              
-              <div class="form-group">
-                <label for="shelterStateSearch">State</label>
-                <select class="form-control" id="shelterStateSearch">
-                  <option>Alabama</option> <option>Alaska</option> <option>Arizona</option> <option>Arkansas</option> <option>California</option>
-                  <option>Colorado</option> <option>Connecticut</option> <option>Delaware</option> <option>Florida</option> <option>Georgia</option>
-                  <option>Hawaii</option> <option>Idaho</option> <option>Illinois</option> <option>Indiana</option> <option>Iowa</option>
-                  <option>Kansas</option> <option>Kentucky</option> <option>Lousiana</option> <option>Maine</option> <option>Maryland</option> 
-                  <option>Massachusetts </option> <option>Michigan</option> <option>Minnesota</option> <option>Mississippi</option> <option>Misouri</option> 
-                  <option>Montana</option> <option>Nebraska</option> <option>Nevada</option> <option>New Hampshire</option> <option>New Jersey</option> 
-                  <option>New Mexico</option> <option>New York</option> <option>North Carolina</option> <option>North Dakota</option> <option>Ohio</option> 
-                  <option>Oklahoma</option> <option>Oregon</option> <option>Pennsylvania</option> <option>Rhode Island</option> <option>South Carolina</option> 
-                  <option>South Dakota</option> <option>Tennessee</option> <option>Texas</option> <option>Utah</option> <option>Vermont</option> 
-                  <option>Virginia</option> <option>Washington</option> <option>West Virginia</option> <option>Wisconsin</option> <option>Wyoming</option> 
-                  
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="shelterTypeSearch">Shelter Type</label>
-                <select class="form-control" id="shelterTypeSearch">
-                  <option value=0>Kill</option>
-                  <option value=1>No Kill</option>
-                  
-                  
-                </select>
-              </div>
+          <h2 class="title"><a href="#">Our Plan</a></h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+        </div>
+      </div>
 
-              <div class="form-group">
-                <label for="shelterRating">Shelter Rating</label>
-                <select class="form-control" id="shelterRatingSearch">
-                  <option value=1>*</option>
-                  <option value=2>**</option>
-                  <option value=3>***</option>
-                  <option value=4>****</option>
-                  <option value=5>*****</option>
-                  
-                  
-                </select>
-              </div>
+      <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="about-col">
+          <div class="img">
+            <img src="/image/about-vision.jpg" alt="" class="img-fluid">
+            <div class="icon"><i class="ion-ios-eye-outline"></i></div>
 
               <button type="submit" class="btn btn-primary" id="shelterSubmit"><i class="fas fa-bone"></i> Fetch</button>
             </form>
+
+          </div>
+          <h2 class="title"><a href="#">Our Vision</a></h2>
+          <p>
+            Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione
+            voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- #about -->
+
+
+{{!-- PORTFOLIO SECTION  --}}
+
+<section id="portfolio" class="section-bg">
+  <div class="container">
+
+    <header class="section-header">
+      <h3 class="section-title">Featured Pets</h3>
+    </header>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">Card</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row portfolio-container">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">App 1</a></h4>
+            <p>App</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">Web 3</a></h4>
+            <p>Web</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">App 2</a></h4>
+            <p>App</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">Card 2</a></h4>
+            <p>Card</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">Web 2</a></h4>
+            <p>Web</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">App 3</a></h4>
+            <p>App</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">Card 1</a></h4>
+            <p>Card</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">Card 3</a></h4>
+            <p>Card</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">Web 1</a></h4>
+            <p>Web</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- #portfolio -->
+
+
+{{!-- STORE SECTION --}}
+
+<section id="portfolio" class="section-bg">
+  <div class="container">
+
+    <header class="section-header">
+      <h3 class="section-title">SUPPORT US BY PURCHASING FROM OUR SHOP!</h3>
+    </header>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">Cat</li>
+          <li data-filter=".filter-card">Dog</li>
+          <li data-filter=".filter-web">Etc</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row portfolio-container">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">App 1</a></h4>
+            <p>App</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">Web 3</a></h4>
+            <p>Web</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">App 2</a></h4>
+            <p>App</p>
           </div>
         </div>
       </div>
     </div>
-
   </div>
-</div>
+</section><!-- #portfolio -->
+
+<section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+
+{{!-- 
+
+<div id="home">
+
+
+
+<div class="container"> --}}
+
+
+{{!-- <div class="landingImg" style="height: 100vh; width: 100vw;">
+<img src="/image/adorable-animal-breed-434090.jpg " height="100%" width="100%" /> --}}
