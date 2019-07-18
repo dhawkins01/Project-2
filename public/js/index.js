@@ -104,7 +104,17 @@ function shelterSearchClick() {
   console.log(shelterState);
   console.log(shelterType);
   console.log(shelterRating);
+
+  var query = {
+    state: shelterState,
+    type: shelterType,
+    rating: shelterRating
 }
+  console.log(query);
+  $.post("/api/shelterSearch", query)
+
+}
+
 
 function animalSearchClick() {
   event.preventDefault();
@@ -118,6 +128,7 @@ function animalSearchClick() {
   console.log(animalGender);
   console.log(animalAge);
 }
+
 
 $submitBtn.on("click", shelterSearchClick);
 $submitBtn2.on("click", animalSearchClick);
