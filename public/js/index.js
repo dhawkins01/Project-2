@@ -127,6 +127,15 @@ function animalSearchClick() {
   console.log(animalState);
   console.log(animalGender);
   console.log(animalAge);
+
+  var query = {
+    species: animalSpecies,
+    state: animalState,
+    gender: animalGender,
+    age: animalAge
+  }
+
+  $.post("/api/animalSearch", query)
 }
 
 

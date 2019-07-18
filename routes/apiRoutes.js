@@ -34,4 +34,16 @@ module.exports = function(app) {
       res.json(data);
     });
   });
+
+  app.post("/api/animalSearch", function(req, res) {
+    db.Pets.findAll({
+      where: {
+        pet_species: req.body.species,
+        pet_gender: req.body.gender
+      }.then(function(data) {
+        res.json(data);
+      })
+
+    })
+  })
 };
