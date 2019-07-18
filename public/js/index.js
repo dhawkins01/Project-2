@@ -1,7 +1,8 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
+var $submitBtn = $("#shelterSubmit");
+var $submitBtn2 = $("#animalSubmit");
 var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
@@ -105,7 +106,21 @@ function shelterSearchClick() {
   console.log(shelterRating);
 }
 
+function animalSearchClick() {
+  event.preventDefault();
+  console.log("Clicked");
+  var animalSpecies = $(animalSpeciesSearch).val();
+  var animalState = $(animalStateSearch).val();
+  var animalGender = $(animalGenderSearch).val();
+  var animalAge = $(animalAgeSearch).val();
+  console.log(animalSpecies);
+  console.log(animalState);
+  console.log(animalGender);
+  console.log(animalAge);
+}
+
 $submitBtn.on("click", shelterSearchClick);
+$submitBtn2.on("click", animalSearchClick);
 
 // Add event listeners to the submit and delete buttons
 // $submitBtn.on("click", handleFormSubmit);
