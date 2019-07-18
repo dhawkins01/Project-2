@@ -13,8 +13,8 @@
               <div class="form-group">
                 <label for="speciesSearch">Species</label>
                 <select class="form-control" id="animalSpeciesSearch">
-                  <option>Cat</option>
-                  <option>Dog</option>
+                  <option value=0>Cat</option>
+                  <option value=1>Dog</option>
                   
                 </select>
               </div>
@@ -37,21 +37,21 @@
               <div class="form-group">
                 <label for="genderSearch">Gender</label>
                 <select class="form-control" id="animalGenderSearch">
-                  <option>Female</option>
-                  <option>Male</option>
+                  <option value=0>Female</option>
+                  <option value=1>Male</option>
                   
                 </select>
               </div>
               <div class="form-group">
                 <label for="ageSearch">Age</label>
-                <select class="form-control" id="animalGenderSearch">
-                  <option>Under 1 year</option>
-                  <option>Under 5 years</option>
-                  <option>Under 10 years</option>
+                <select class="form-control" id="animalAgeSearch">
+                  <option value=1>Under 1 year</option>
+                  <option value=5>Under 5 years</option>
+                  <option value=10>Under 10 years</option>
                   
                 </select>
               </div>
-              <button type="submit" class="submit btn btn-primary"><i class="fas fa-bone"></i> Fetch</button>
+              <button type="submit" class="submit btn btn-primary" id="animalSubmit"><i class="fas fa-bone"></i> Fetch</button>
               
             </form>
           </div>
@@ -106,7 +106,7 @@
                 </select>
               </div>
 
-              <button type="submit" class="btn btn-primary" id="submit"><i class="fas fa-bone"></i> Fetch</button>
+              <button type="submit" class="btn btn-primary" id="shelterSubmit"><i class="fas fa-bone"></i> Fetch</button>
             </form>
           </div>
         </div>
