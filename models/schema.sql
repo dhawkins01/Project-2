@@ -26,6 +26,9 @@ pet_gender VARCHAR(45) NULL,
 pet_breed VARCHAR(45) NULL,
 shelter_id INTEGER NOT NULL,
 pet_adopted BOOLEAN DEFAULT FALSE,
+createdAt VARCHAR(45) NULL,
+updatedAt VARCHAR(45) NULL,
+ShelterShelterId VARCHAR(45) NULL,
 PRIMARY KEY (pet_id)
 );
 
