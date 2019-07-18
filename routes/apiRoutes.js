@@ -20,17 +20,18 @@ module.exports = function(app) {
       console.log(dbShelter);
     });
   });
-  app.post("/api/shelters", function(req, res) {
+  app.post("/api/shelterSearch", function(req, res) {
     console.log(req.body);
     db.Shelters.findAll({
       where: {
-      shelter_state: req.body.shelterStateSearch,
-      shelter_type: req.body.shelterTypeSearch,
-      shelter_rating: req.body.shelterRatingSearch
-      }
-    }).then(function(dbExamples) {
+        shelter_state: req.body.state,
+        shelter_kill: req.body.type,
+        shelter_rating: req.body.rating
+        }
+    }).then(function(data) {
       // We have access to the new todo as an argument inside of the callback function
-      res.json(dbExamples);
+      console.log(data);
+      res.json(data);
     });
   });
 };

@@ -103,7 +103,17 @@ function shelterSearchClick() {
   console.log(shelterState);
   console.log(shelterType);
   console.log(shelterRating);
+
+  var query = {
+    state: shelterState,
+    type: shelterType,
+    rating: shelterRating
 }
+  console.log(query);
+  $.post("/api/shelterSearch", query)
+
+}
+
 
 $submitBtn.on("click", shelterSearchClick);
 
