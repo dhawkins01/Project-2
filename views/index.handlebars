@@ -18,19 +18,13 @@
             <a class="nav-link js-scroll" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">Services</a>
+            <a class="nav-link js-scroll" href="#serfices">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Featured</a>
+            <a class="nav-link js-scroll" href="#portfolio">Featured</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Login/Register</a>
+            <a class="nav-link js-scroll" href="#Login">Login/Register</a>
           </li>
         </ul>
       </div>
@@ -43,45 +37,79 @@
   <div class="intro-content display-table">
     <div class="table-cell">
       <div class="container">
-        <h1 class="intro-title mb-4">Welcome to FurEver!</h1>
-        <p class="intro-subtitle"><span class="text-slider-items">A local shelter search engine., Where we simplify pet
-            searching just for you!, So what are you waiting for?, Your furry friend awaits for your call!, ,...
-          </span><strong class="text-slider"></strong></p>
+        <strong>
+          <h1 class="intro-title mb-4">Welcome to FurEver!</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">A local shelter search engine., Where we simplify
+              pet
+              searching just for you!, So what are you waiting for?, Your furry friend awaits for your call!, ,...
+            </span><strong class="text-slider"></strong></p>
       </div>
     </div>
   </div>
 </div>
 
+
+
+{{!-- Modal here for login --}}
+
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
 {{!-- Counter,DEEZ NUMBERS, WHAT DO DEY MEEN???? jk :> --}}
 
 <section id="facts" class="wow fadeIn">
   <div class="container">
 
-    <header class="section-header">
-      <h3>Le Facts</h3>
-      <p> ANIMATAIONS ERRYWHERE. ONE FOR YOU. ONE FOR YOU , REEEEEEEEEEE</p>
+    <header class="section-header text-center">
+      <h3>Facts About Shelters in The U.S.</h3>
+      <p>Here is some data these shelters go through yearly.</p>
     </header>
 
     <div class="row counters">
 
       <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">274</span>
-        <p>Dogs inpounded daily</p>
+        <span data-toggle="counter-up">6500000</span>
+        <p>Are Animals that Enter Animal Shelters</p>
       </div>
 
       <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">421</span>
-        <p>Horses in the world</p>
+        <span data-toggle="counter-up">3300000</span>
+        <p>Are Dogs captured.</p>
       </div>
 
       <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">1,364</span>
-        <p>Shelters with no Tacos</p>
+        <span data-toggle="counter-up">3200000</span>
+        <p>Are Cats captured.</p>
       </div>
 
       <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">-50</span>
-        <p>Hard Workers</p>
+        <span data-toggle="counter-up">1500000</span>
+        <p>Are Euthanized In The US</p>
       </div>
 
     </div>
@@ -98,255 +126,55 @@
 <section id="about">
   <div class="container">
 
-    <header class="section-header">
+    <header class="section-header text-center">
       <h3>Why we care</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
+      <p>We are a group of pet owners whom beleive every pet out there needs a chance. Wether its a grey stray to a
+        rescue from a dog fighting ring. Every pet needs the opportunity to be loved and cared for. So we've made it
+        simple and easy for you to locate a pet nearby. So what are you waiting for, cause ur "furiend" is. </p>
     </header>
-    <header class="section-header">
-      <br><br>
-      <h3>Services We provide</h3>
-    </header>
-    <div class="row about-cols">
 
-      <div class="col-md-4 wow fadeInUp">
-        <div class="about-col">
-          <div class="img">
-            <img src="/image/about-mission.jpg" alt="" class="img-fluid">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+
+    <section id="serfices">
+      <header class="section-header">
+        <br><br>
+        <h3>Services We provide</h3>
+      </header>
+
+      <div class="row about-cols">
+        <div class="col-md-6 wow fadeInUp">
+          <div class="about-col">
+            <div class="img">
+              <img src="/image/about-mission.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            </div>
+            <h2 class="title"><a href="#">Search By Shelter</a></h2>
+            <p class="description"></p>
           </div>
-          <h2 class="title"><a href="#">Our Mission</a></h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+        </div>
+
+        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="about-col">
+            <div class="img">
+              <img src="/image/about-plan.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-list-outline"></i></div>
+            </div>
+            <h2 class="title"><a href="#">Search By Animal</a></h2>
+            <p class="description"></p>
+          </div>
         </div>
       </div>
-
-      <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="about-col">
-          <div class="img">
-            <img src="/image/about-plan.jpg" alt="" class="img-fluid">
-            <div class="icon"><i class="ion-ios-list-outline"></i></div>
-          </div>
-          <h2 class="title"><a href="#">Our Plan</a></h2>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="about-col">
-          <div class="img">
-            <img src="/image/about-vision.jpg" alt="" class="img-fluid">
-            <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-          </div>
-          <h2 class="title"><a href="#">Our Vision</a></h2>
-          <p>
-            Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione
-            voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-          </p>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
-</section><!-- #about -->
+</section>
 
 
-{{!-- PORTFOLIO SECTION  --}}
-
+{{!-- featured SECTION  --}}
 <section id="portfolio" class="section-bg">
   <div class="container">
 
     <header class="section-header">
-      <h3 class="section-title">Featured Pets</h3>
+      <h3 class="section-title">Featured Animals</h3>
     </header>
-
-    <div class="row">
-      <div class="col-lg-12">
-        <ul id="portfolio-flters">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row portfolio-container">
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">App 1</a></h4>
-            <p>App</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">Web 3</a></h4>
-            <p>Web</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">App 2</a></h4>
-            <p>App</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">Card 2</a></h4>
-            <p>Card</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">Web 2</a></h4>
-            <p>Web</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">App 3</a></h4>
-            <p>App</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">Card 1</a></h4>
-            <p>Card</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">Card 3</a></h4>
-            <p>Card</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-          </figure>
-
-          <div class="portfolio-info">
-            <h4><a href="#">Web 1</a></h4>
-            <p>Web</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- #portfolio -->
-
-
-{{!-- STORE SECTION --}}
-
-<section id="portfolio" class="section-bg">
-  <div class="container">
-
-    <header class="section-header">
-      <h3 class="section-title">SUPPORT US BY PURCHASING FROM OUR SHOP!</h3>
-    </header>
-
-    <div class="row">
-      <div class="col-lg-12">
-        <ul id="portfolio-flters">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">Cat</li>
-          <li data-filter=".filter-card">Dog</li>
-          <li data-filter=".filter-web">Etc</li>
-        </ul>
-      </div>
-    </div>
 
     <div class="row portfolio-container">
 
@@ -399,82 +227,65 @@
       </div>
     </div>
   </div>
-</section><!-- #portfolio -->
+</section>
+{{!-- Freatured Shelter --}}
 
-<section id="contact" class="section-bg wow fadeInUp">
-      <div class="container">
+<section id="portfolio" class="section-bg">
+  <div class="container">
 
-        <div class="section-header">
-          <h3>Contact Us</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
+    <header class="section-header">
+      <h3 class="section-title">Featured Shelters</h3>
+    </header>
 
-        <div class="row contact-info">
+    <div class="row portfolio-container">
 
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
-            </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
+
+          <div class="portfolio-info">
+            <h4><a href="#">App 1</a></h4>
+            <p>App</p>
           </div>
-
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
-            </div>
-          </div>
-
         </div>
-
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
       </div>
-    </section><!-- #contact -->
 
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
 
-{{!-- 
+          <div class="portfolio-info">
+            <h4><a href="#">Web 3</a></h4>
+            <p>Web</p>
+          </div>
+        </div>
+      </div>
 
-<div id="home">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+        <div class="portfolio-wrap">
+          <figure>
+            <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
+            <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
+              title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+          </figure>
 
-
-
-<div class="container"> --}}
-
-
-{{!-- <div class="landingImg" style="height: 100vh; width: 100vw;">
-<img src="/image/adorable-animal-breed-434090.jpg " height="100%" width="100%" /> --}}
+          <div class="portfolio-info">
+            <h4><a href="#">App 2</a></h4>
+            <p>App</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
