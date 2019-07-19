@@ -32,13 +32,10 @@ ShelterShelterId VARCHAR(45) NULL,
 PRIMARY KEY (pet_id)
 );
 
-CREATE TABLE users (
-user_id INTEGER NOT NULL AUTO_INCREMENT,
-user_email VARCHAR(45) NULL,
-user_password VARCHAR(45) NULL,
-user_name VARCHAR(45) NULL,
-user_phone VARCHAR(45) NULL,
-user_image VARCHAR(45) NULL,
-pet_id INTEGER NOT NULL,
-PRIMARY KEY (user_id)
+CREATE TABLE users ( 
+	id int AUTO_INCREMENT,
+	username varchar(20),
+	fullname varchar(20),
+	password varchar(128),
+	PRIMARY KEY (id)
 );

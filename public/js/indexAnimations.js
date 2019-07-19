@@ -39,10 +39,12 @@
 	});
 
 	/*--/ Star Counter /--*/
-	$('.counter').counterUp({
+	$('[data-toggle="counter-up"]').counterUp({
 		delay: 15,
 		time: 2000
 	});
+
+	new WOW().init();
 
 	/*--/ Star Scrolling nav /--*/
 	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
