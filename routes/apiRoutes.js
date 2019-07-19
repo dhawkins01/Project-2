@@ -55,9 +55,28 @@ module.exports = function(app) {
         }
        }]
      }).then(function(data) {
-        console.log(data);
-          res.json(data);
-          
+       var animals = [];
+        // console.log(data);
+        console.log(data[0].dataValues.pet_name);
+        console.log(data[0].dataValues.pet_species);
+        console.log(data[0].dataValues.pet_age);
+        console.log(data[0].dataValues.pet_gender);
+        console.log(data[0].Shelter.shelter_state);
+
+        for (var i = 0; i< data.length; i++){
+          var animal = {
+            petName: data[i].dataValues.pet_name,
+            petSpecies: data[i].dataValues.pet_species,
+            petAge: data[i].dataValues.pet_age,
+            petGender: data[i].dataValues.pet_gender,
+            petState: data[i].Shelter.shelter_state
+          }
+        animals.push(animal);
+      }
+        console.log(animals);
+        // console.log(data.shelter_state);
+          // res.json(data);
+      res.json(animals);
  });
 });
 }

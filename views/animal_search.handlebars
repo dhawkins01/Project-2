@@ -99,10 +99,18 @@
                 </div>
             </form>
         </div>
+
     </section>
 </div>
 <ul>
-    {{#each shelters}}
+
+        <div class="resultAnimals">
+            
+        </div>
+    {{pets}}
+    {{#each pets}}
     {{!-- form/card goes here--}}
+        <h3>Pet Species: {{this.petSpecies}}</h3>
+        
     {{/each}}
 </ul>

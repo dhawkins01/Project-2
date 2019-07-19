@@ -137,9 +137,33 @@ function animalSearchClick() {
     state: animalState,
     gender: animalGender,
     age: animalAge
-  }
+  };
 
-  $.post("/api/animalSearch", query)
+  $.post("/api/animalSearch", query, function(data){
+    console.log(data);
+
+    for (var i = 0; i < data.length; i++) {
+
+      // var card = $("<div class='card' style='width: 18rem;'><img class='card-img-top' src=''...'' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"
+      // var card2 = "</h5><p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href='#' class='btn btn-primary'>Favorite</a></div></div>";)
+      var p = $("<p>");
+      var p1 = p.text("Name: " + data[i].petName + " Type: " + data[i].petSpecies+ " Age: " + data[i].petAge +" Gender: " + data[i].petGender+ " State: " + data[i].petState);
+      // var p2 = p.text("Type: " + data[i].petSpecies);
+      // // var p3 = p.text("Age: " + data[i].petAge);
+      // // var p4 = p.text("Gender: " + data[i].petGender);
+      // // var p5 = p.text("State: " + data[i].petState);
+
+      // var card = ($("<div class='card' style='width: 18rem;'><img class='card-img-top' src=''...'' alt='Card image cap'><div class='card-body'><h5 class='card-title'>")
+      // var name = p.text("Name: " + data[i].petName);
+      // var card2 = $("</h5><p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href='#' class='btn btn-primary'>Favorite</a></div></div>";)
+
+
+      $(".resultAnimals").append(p1);
+    }
+
+    
+  // window.location = "/search/animals";
+  });
   
 }
 
