@@ -42,8 +42,8 @@
           <p class="intro-subtitle"><span class="text-slider-items">A local shelter search engine., Where we simplify
               pet searching just for you!, So what are you waiting for?, Your furry friend awaits to meet you!, ,...
             </span><strong class="text-slider"></strong></p>
-{{!-- Button to get started --}}
-            <a href="#facts" class="btn-get-started js-scroll">Get Started</a>
+          {{!-- Button to get started --}}
+          <a href="#facts" class="btn-get-started js-scroll">Get Started</a>
       </div>
     </div>
   </div>
@@ -55,61 +55,62 @@
 <div class="page-wrapper">
   <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"> &times;</button>
+      <div class="modal-content" style="height: 600px; width: 600px;">
+        <div class="modal-header text-center">
           <h4>Login</h4>
-        </div>
-        <div class="modal-body">
-          <form class="form-inline">
-            <div class="form-group">
-              <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm"
-                placeholder="Email" id="email" name="email">
-            </div>
-            <div class="form-group">
-
-              <label class="sr-only" for="password">Password</label>
-              <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password">
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Remember me
-              </label>
-            </div>
-            <button type="submit" class="btn btn-info btn-xs">Sign in</button>
-            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
-          </form>
-        </div>
-      </div>
-      {{!-- div --}}
-       <div class="modal-content2" style="float: right; postion: relative">
-        <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"> &times;</button>
-          <h4>Register</h4>
         </div>
-        <div class="modal-body">
-          <form class="form-inline">
+        {{!-- container --}}
+        <div class="modal-body column">
+          <form method="post" action="/login">
+          <div class="form-group">
+            <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm"
+              placeholder="Email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="password">Password</label>
+            <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-info btn-xs">Sign in</button>
+          <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+        </form>
+
+
+          {{!-- Sign up box --}}
+
+          <div class="modal-header text-center">
+            <h4>Sign Up</h4>
+          </div>
+          <form class="lefake"><a href="/search/animals">
             <div class="form-group">
               <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm"
-                placeholder="Email" id="email" name="email">
+                placeholder="Email" id="email" name="Email">
             </div>
             <div class="form-group">
-
-              <label class="sr-only" for="password">Password</label>
-              <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password">
+              <label class="sr-only" for="email">Enter Your Name Here.</label><input type="text"
+                class="form-control input-sm" placeholder="Enter Your Name Here." id="fName" name="Fullname">
             </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Remember me
-              </label>
+            <div class="form-group">
+              <label class="sr-only" for="email">Password</label><input type="text" class="form-control input-sm"
+                placeholder="Password" id="pSwrod" name="Password">
             </div>
-            <button type="submit" class="btn btn-info btn-xs">Sign in</button>
-            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+            <div class="form-group">
+              <label class="sr-only" for="email">Confirm Your Password</label><input type="text"
+                class="form-control input-sm" placeholder="Confirm Your Password" id="Cpass" name="Confirm Password">
+            </div>
+            <input type="submit">
           </form>
         </div>
+        </form>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 
@@ -161,9 +162,9 @@
     <header class="section-header text-center">
       <h3>Why we care</h3>
       <p>We are a group of pet owners whom beleive every pet out there needs a chance. Wether its a stray on the road
-        to a rescure from a puppy mill. Every pet needs the opportunity to be loved and cared for. So we've
-        made it
-        simple and easy for you to locate a pet shelter or animal nearby. So what are you waiting for, cause ur "furiend" is. </p>
+        to a rescure from a puppy mill. Every pet needs the opportunity to be loved and cared for. So welcome toour website where we've
+        made it simple and easy for you to locate a pet shelter nearby. So what are you waiting for, cause ur
+        "furiend" is. </p>
     </header>
 
 
@@ -171,14 +172,14 @@
       <header class="section-header text-center">
         <br><br>
         <h3>Services We provide</h3>
-        <p >Choose from our options on what you'd like to search by.</p>
+        <p>Choose from our options on what you'd like to search by.</p>
       </header>
 
       <div class="row about-cols text-center">
         <div class="col-md-6 wow fadeInUp">
           <div class="about-col">
             <div class="img">
-              <img src="/image/images.jpg" style="width: 541px; height: 406px;"alt="" class="img-fluid">
+              <img src="/image/images.jpg" style="width: 541px; height: 406px;" alt="" class="img-fluid">
               <div class="icon"><i class="ion-ios-list-outline"></i></div>
             </div>
             <h2 class="title"><a href="/search/shelters">Search By Shelter</a></h2>
@@ -189,7 +190,7 @@
         <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <div class="about-col">
             <div class="img">
-              <img src="/image/large_squad.jpg"alt="" class="img-fluid">
+              <img src="/image/large_squad.jpg" alt="" class="img-fluid">
               <div class="icon"><i class="ion-ios-list-outline"></i></div>
             </div>
             <h2 class="title"><a href="/search/animals">Search By Animal</a></h2>
@@ -218,11 +219,14 @@
             <img src="/image/396529242.jpg" class="img-fluid" alt="">
             <a href="/image/396529242.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="https://www.adoptapet.com/pet/24768125-altamonte-springs-florida-labrador-retriever-mix" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="https://www.adoptapet.com/pet/24768125-altamonte-springs-florida-labrador-retriever-mix"
+              class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
-            <h4><a href="https://www.adoptapet.com/pet/24768125-altamonte-springs-florida-labrador-retriever-mix">RADAR</a></h4>
+            <h4><a
+                href="https://www.adoptapet.com/pet/24768125-altamonte-springs-florida-labrador-retriever-mix">RADAR</a>
+            </h4>
             <p>Labrador Retriever/Border Collie Mix</p>
           </div>
         </div>
@@ -234,7 +238,8 @@
             <img src="/image/387861163.jpg" class="img-fluid" alt="">
             <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="https://www.adoptapet.com/pet/24438962-altamonte-springs-florida-boxer-mix" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="https://www.adoptapet.com/pet/24438962-altamonte-springs-florida-boxer-mix" class="link-details"
+              title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
@@ -250,7 +255,8 @@
             <img src="/image/417965404.jpg" class="img-fluid" alt="">
             <a href="/image/417965404.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="adoptapet.com/pet/25011211-orlando-florida-cat" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="adoptapet.com/pet/25011211-orlando-florida-cat" class="link-details" title="More Details"><i
+                class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
@@ -276,10 +282,11 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
         <div class="portfolio-wrap">
           <figure>
-            <img src="/image/download.png" class="img-fluid" style="width: 350px; height: 300px;"alt="" style="">
+            <img src="/image/download.png" class="img-fluid" style="width: 350px; height: 300px;" alt="" style="">
             <a href="/image/download.png" data-lightbox="portfolio" data-title="App 1" class="link-preview"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="https://petallianceorlando.org/" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="https://petallianceorlando.org/" class="link-details" title="More Details"><i
+                class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
@@ -292,14 +299,17 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
         <div class="portfolio-wrap">
           <figure>
-            <img src="/image/logo-seminole.jpg" class="img-fluid" style="width: 500px; height: 280px;"alt="">
+            <img src="/image/logo-seminole.jpg" class="img-fluid" style="width: 500px; height: 280px;" alt="">
             <a href="/image/logo-seminole.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="http://www.seminolecountyfl.gov/departments-services/county-managers-office/animal-services/" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="http://www.seminolecountyfl.gov/departments-services/county-managers-office/animal-services/"
+              class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
-            <h4><a href="http://www.seminolecountyfl.gov/departments-services/county-managers-office/animal-services/">Seminole Count Animal Services</a></h4>
+            <h4><a
+                href="http://www.seminolecountyfl.gov/departments-services/county-managers-office/animal-services/">Seminole
+                Count Animal Services</a></h4>
             <p>Looking for a friend?, We Host Adoptions, Lost/Found pets,etc.</p>
           </div>
         </div>
@@ -308,10 +318,12 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
         <div class="portfolio-wrap">
           <figure>
-            <img src="/image/0da9e3bd1f889a7ea5bb4a5f33bced02.jpg" class="img-fluid" style="width: 500px; height: 250px";alt="">
-            <a href="/image/0da9e3bd1f889a7ea5bb4a5f33bced02.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
-              title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="http://www.savealifepetrescue.org/" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <img src="/image/0da9e3bd1f889a7ea5bb4a5f33bced02.jpg" class="img-fluid" style="width: 500px; height: 250px"
+              ;alt="">
+            <a href="/image/0da9e3bd1f889a7ea5bb4a5f33bced02.jpg" class="link-preview" data-lightbox="portfolio"
+              data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+            <a href="http://www.savealifepetrescue.org/" class="link-details" title="More Details"><i
+                class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
