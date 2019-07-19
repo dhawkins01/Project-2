@@ -2,7 +2,7 @@
 <div class="navbarIndex">
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">FurEver</a>
+      <a class="navbar-brand js-scroll" href="#page-top">Furiend</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
@@ -24,29 +24,30 @@
             <a class="nav-link js-scroll" href="#portfolio">Featured</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#Login">Login/Register</a>
+            <a class="nav-link" href="#loginModal" data-toggle="modal">Login/Register</a>
           </li>
-          <li>
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-          </li>
-
         </ul>
       </div>
     </div>
   </nav>
 </div>
 
-<div id="home" class="intro route bg-image" style="background-image: url(/image/adorable-animal-breed-434090.jpg)">
+<div id="home" class="intro route bg-image" style="background-image: url(/image/adorable-animal-breed-434090.jpg);">
   <div class="overlay-itro"></div>
   <div class="intro-content display-table">
     <div class="table-cell">
       <div class="container">
         <strong>
-          <h1 class="intro-title mb-4">Welcome to FurEver!</h1>
+          <h1 class="intro-title mb-4">Welcome to Furiend!</h1>
           <p class="intro-subtitle"><span class="text-slider-items">A local shelter search engine., Where we simplify
               pet
               searching just for you!, So what are you waiting for?, Your furry friend awaits for your call!, ,...
             </span><strong class="text-slider"></strong></p>
+
+
+
+
+            <a href="#facts" class="btn-get-started js-scroll">Get Started</a>
       </div>
     </div>
   </div>
@@ -55,34 +56,65 @@
 
 
 {{!-- Modal here for login --}}
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+<div class="page-wrapper">
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"> &times;</button>
+          <h4>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm"
+                placeholder="Email" id="email" name="email">
+            </div>
+            <div class="form-group">
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+              <label class="sr-only" for="password">Password</label>
+              <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-info btn-xs">Sign in</button>
+            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+      </div>
+      {{!-- div --}}
+       <div class="modal-content2" style="float: right; postion: relative">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"> &times;</button>
+          <h4>Register</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm"
+                placeholder="Email" id="email" name="email">
+            </div>
+            <div class="form-group">
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+              <label class="sr-only" for="password">Password</label>
+              <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-info btn-xs">Sign in</button>
+            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+      </div>
     </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+  </div>
 </div>
-
 
 
 {{!-- Counter,DEEZ NUMBERS, WHAT DO DEY MEEN???? jk :> --}}
@@ -103,20 +135,19 @@
       </div>
 
       <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">3300000</span>
-        <p>Are Dogs captured.</p>
+        <span data-toggle="counter-up">3200000</span>
+        <p>Are pets adopted each year.</p>
       </div>
 
       <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">3200000</span>
-        <p>Are Cats captured.</p>
+        <span data-toggle="counter-up">710000</span>
+        <p>Are strays that are returned to their owners.</p>
       </div>
 
       <div class="col-lg-3 col-6 text-center">
         <span data-toggle="counter-up">1500000</span>
-        <p>Are Euthanized In The US</p>
+        <p>Are pets that get euthanized.</p>
       </div>
-
     </div>
 
     <div class="facts-img">
@@ -133,9 +164,10 @@
 
     <header class="section-header text-center">
       <h3>Why we care</h3>
-      <p>We are a group of pet owners whom beleive every pet out there needs a chance. Wether its a grey stray to a
-        rescue from a dog fighting ring. Every pet needs the opportunity to be loved and cared for. So we've made it
-        simple and easy for you to locate a pet nearby. So what are you waiting for, cause ur "furiend" is. </p>
+      <p>We are a group of pet owners whom beleive every pet out there needs a chance. Wether its a stray on the road
+        to a rescure from a puppy mill. Every pet needs the opportunity to be loved and cared for. So we've
+        made it
+        simple and easy for you to locate a pet shelter or animal nearby. So what are you waiting for, cause ur "furiend" is. </p>
     </header>
 
 
@@ -145,26 +177,26 @@
         <h3>Services We provide</h3>
       </header>
 
-      <div class="row about-cols">
+      <div class="row about-cols text-center">
         <div class="col-md-6 wow fadeInUp">
           <div class="about-col">
             <div class="img">
-              <img src="/image/about-mission.jpg" alt="" class="img-fluid">
-              <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              <img src="/image/images.jpg" style="width: 541px; height: 406px;"alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-list-outline"></i></div>
             </div>
             <h2 class="title"><a href="/search/shelters">Search By Shelter</a></h2>
-            <p class="description"></p>
+            <p class="description">Here we search By Shelters in your State.</p>
           </div>
         </div>
 
         <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <div class="about-col">
             <div class="img">
-              <img src="/image/about-plan.jpg" alt="" class="img-fluid">
+              <img src="/image/large_squad.jpg"alt="" class="img-fluid">
               <div class="icon"><i class="ion-ios-list-outline"></i></div>
             </div>
             <h2 class="title"><a href="/search/animals">Search By Animal</a></h2>
-            <p class="description"></p>
+            <p class="description">Here we search by the type of Animal.</p>
           </div>
         </div>
       </div>
@@ -186,15 +218,15 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
         <div class="portfolio-wrap">
           <figure>
-            <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
+            <img src="/image/396529242.jpg" class="img-fluid" alt="">
+            <a href="/image/396529242.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="https://www.adoptapet.com/pet/24768125-altamonte-springs-florida-labrador-retriever-mix" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
-            <h4><a href="#">App 1</a></h4>
-            <p>App</p>
+            <h4><a href="https://www.adoptapet.com/pet/24768125-altamonte-springs-florida-labrador-retriever-mix">RADAR</a></h4>
+            <p>Labrador Retriever/Border Collie Mix</p>
           </div>
         </div>
       </div>
@@ -202,15 +234,15 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
         <div class="portfolio-wrap">
           <figure>
-            <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+            <img src="/image/387861163.jpg" class="img-fluid" alt="">
             <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="https://www.adoptapet.com/pet/24438962-altamonte-springs-florida-boxer-mix" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
-            <h4><a href="#">Web 3</a></h4>
-            <p>Web</p>
+            <h4><a href="https://www.adoptapet.com/pet/24438962-altamonte-springs-florida-boxer-mix">THOR</a></h4>
+            <P>Boxer/Beagle Mix</p>
           </div>
         </div>
       </div>
@@ -218,15 +250,15 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
         <div class="portfolio-wrap">
           <figure>
-            <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
+            <img src="/image/417965404.jpg" class="img-fluid" alt="">
+            <a href="/image/417965404.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="adoptapet.com/pet/25011211-orlando-florida-cat" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
-            <h4><a href="#">App 2</a></h4>
-            <p>App</p>
+            <h4><a href="adoptapet.com/pet/25011211-orlando-florida-cat">OMAR</a></h4>
+            <p>Domestic Shorthair</p>
           </div>
         </div>
       </div>
@@ -247,15 +279,15 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
         <div class="portfolio-wrap">
           <figure>
-            <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
+            <img src="/image/download.png" class="img-fluid" style="width: 350px; height: 300px;"alt="" style="">
+            <a href="/image/download.png" data-lightbox="portfolio" data-title="App 1" class="link-preview"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="https://petallianceorlando.org/" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
-            <h4><a href="#">App 1</a></h4>
-            <p>App</p>
+            <h4><a href="https://petallianceorlando.org/">Pet Alliance Of Greater Orlando</a></h4>
+            <p>The go-to pet experts across Central Florida.</p>
           </div>
         </div>
       </div>
@@ -263,15 +295,15 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
         <div class="portfolio-wrap">
           <figure>
-            <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
+            <img src="/image/logo-seminole.jpg" class="img-fluid" style="width: 500px; height: 280px;"alt="">
+            <a href="/image/logo-seminole.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="http://www.seminolecountyfl.gov/departments-services/county-managers-office/animal-services/" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
-            <h4><a href="#">Web 3</a></h4>
-            <p>Web</p>
+            <h4><a href="http://www.seminolecountyfl.gov/departments-services/county-managers-office/animal-services/">Seminole Count Animal Services</a></h4>
+            <p>Looking for a friend?, We Host Adoptions, Lost/Found pets,etc.</p>
           </div>
         </div>
       </div>
@@ -279,15 +311,15 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
         <div class="portfolio-wrap">
           <figure>
-            <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
-            <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
+            <img src="/image/0da9e3bd1f889a7ea5bb4a5f33bced02.jpg" class="img-fluid" style="width: 500px; height: 250px";alt="">
+            <a href="/image/0da9e3bd1f889a7ea5bb4a5f33bced02.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
               title="Preview"><i class="ion ion-eye"></i></a>
-            <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+            <a href="http://www.savealifepetrescue.org/" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
           </figure>
 
           <div class="portfolio-info">
-            <h4><a href="#">App 2</a></h4>
-            <p>App</p>
+            <h4><a href="http://www.savealifepetrescue.org/">Save a Life Pet Rescue</a></h4>
+            <p>Our mission is to save and enrich the lives of dogs of all types.</p>
           </div>
         </div>
       </div>
